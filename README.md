@@ -19,4 +19,4 @@ No repositório do GitHub, selecione **Settings → Pages → Build and deployme
 
 ## Imagens e política
 
-O cenário em `public/valley.webp` foi criado com base no print do jogo. O arquivo `public/faithbound-logo.webp` contém uma versão gerada a partir do logo de referência e pode receber o arquivo original. A política cobre o site, sua preferência de idioma e a hospedagem planejada no GitHub Pages.
+O cenário em `public/valley.webp` foi criado com base no print do jogo. O arquivo `public/faithbound-logo.webp` contém uma versão gerada a partir do logo de referência e pode receber o arquivo original. A política de privacidade cobre o jogo para Android e seu site oficial.

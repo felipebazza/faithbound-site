@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import PrivacyContent from './privacy-policy/content';
 import { useEffect, useState } from 'react';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
@@ -9,21 +10,9 @@ const storageKey = 'faithbound-language';
 const translations = {
   en: {
     language: 'Language', navigation: 'Main navigation', privacy: 'Privacy Policy', home: 'Back to home',
-    intro: 'This policy covers the Faithbound website.',
-    storageTitle: 'Language preference',
-    storage: 'When you select a language, this site saves your choice in your browser so it can remember it on later visits. You can clear this preference in your browser’s site data settings.',
-    hostingTitle: 'Hosting',
-    hosting: 'GitHub Pages hosts this site. See the GitHub Privacy Statement for information about how GitHub processes personal data.',
-    github: 'GitHub Privacy Statement',
   },
   'pt-BR': {
     language: 'Idioma', navigation: 'Navegação principal', privacy: 'Política de Privacidade', home: 'Voltar ao início',
-    intro: 'Esta política se aplica ao site do Faithbound.',
-    storageTitle: 'Preferência de idioma',
-    storage: 'Ao selecionar um idioma, o site salva a escolha no seu navegador para lembrar dela em visitas futuras. Você pode apagar essa preferência nas configurações de dados do site do navegador.',
-    hostingTitle: 'Hospedagem',
-    hosting: 'Este site é hospedado no GitHub Pages. Consulte a Declaração de Privacidade do GitHub para saber como o GitHub trata dados pessoais.',
-    github: 'Declaração de Privacidade do GitHub',
   },
 };
 
@@ -71,12 +60,7 @@ export default function Site({ privacy = false }) {
       {privacy ? (
         <main className="policy">
           <h1>{copy.privacy}</h1>
-          <p>{copy.intro}</p>
-          <h2>{copy.storageTitle}</h2>
-          <p>{copy.storage}</p>
-          <h2>{copy.hostingTitle}</h2>
-          <p>{copy.hosting}</p>
-          <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">{copy.github}</a></p>
+          <PrivacyContent locale={locale} />
           <Link className="menu-link" href="/">{copy.home}</Link>
         </main>
       ) : (
