@@ -7,7 +7,7 @@ export default function PrivacyContent({ locale }) {
   if (locale === 'pt-BR') {
     return (
       <>
-        <p><strong>Data de vigência</strong> [Dia de mês de ano]</p>
+        <p><strong>Data de vigência</strong> 21/11/2026</p>
         <p>Esta Política de Privacidade se aplica ao jogo Faithbound para Android e ao seu site oficial, operados pela Draccoexe Games.</p>
 
         <h2>Progresso no jogo e preferências</h2>
@@ -29,7 +29,7 @@ export default function PrivacyContent({ locale }) {
 
   return (
     <>
-      <p><strong>Effective date</strong> [Month Day, Year]</p>
+      <p><strong>Effective date</strong> 11/21/2026</p>
       <p>This Privacy Policy applies to the Faithbound Android game and its official website, operated by Draccoexe Games.</p>
 
       <h2>Game progress and preferences</h2>
