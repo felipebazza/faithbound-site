@@ -1,0 +1,15 @@
+{
+  "name": "faithbound",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "engines": { "node": ">=20.9.0" },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  }
+}
