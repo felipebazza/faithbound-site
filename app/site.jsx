@@ -59,7 +59,7 @@ export default function Site({ privacy = false }) {
       </header>
       {privacy ? (
         <main className="policy">
-          <h1>{copy.privacy}</h1>
+          <h1>{copy.privacy} — Faithbound</h1>
           <PrivacyContent locale={locale} />
           <Link className="menu-link" href="/">{copy.home}</Link>
         </main>
